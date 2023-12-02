@@ -1,1 +1,1 @@
-# my-practical-6
+# my-practical-6-github.io
