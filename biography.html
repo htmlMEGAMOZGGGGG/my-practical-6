@@ -1,107 +1,137 @@
 <!DOCTYPE html>
-<html lang="uk"><head>
+<html lang="uk">
+<head>
    <meta charset="utf-8">
    <title>biography</title>
    
-<style type="text/css">
-    #button:link{
-        color:white
+   <style type="text/css">
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 22px;
+        }
+
+        h2 {
+            font-size: 140%;
+        }
+
+        p {
+            font-size: 120%;
+            background-color: #e6e6e6;
+            padding: 10px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        #back {
+            font-style: italic;
+        }
+
+        #zmi {
+            text-align: center;
+        }
+
+        #back12 {
+            font-weight: 500;
+        }
+
+        #up {
+            text-transform: uppercase;
+        }
+
+        #base {
+            background-color: #FF5733;
+            color: #FFFFFF;
+        }
+
+        #child {
+            background-color: #2d8617;
+            color: #FFFFFF;
+        }
+
+        #school {
+            background-color: #ff0bc2;
+            color: #FFFFFF;
+        }
+
+        #unschool {
+            background-color: #3498DB;
+            color: #FFFFFF;
+        }
+
+        #univ {
+            background-color: #060afc;
+            color: #FFFFFF;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid black;
+            margin: 20px;
+        }
+
+            /* Розміщення блоків на desktop */
+    @media (min-width: 992px) {
+        article {
+            width: 48%;
+            display: inline-block;
+        }
     }
- #button {
-    margin: 10px;
-    border-width: 2px; 
-    border-style: solid;
-    border-color: black;
-    width: 100px;
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: blue;
-    text-decoration: none;
-  
-}
-#button:visited {
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
-}
-#button:hover {
-    background-color: magenta; 
-}
 
-#button:active {
-    background-color: yellow;
-}
+    /* Розміщення блоків на tablet */
+    @media (min-width: 768px) and (max-width: 991px) {
+        article {
+            width: 100%;
+            display: block;
+        }
+    }
 
-
-
-#base {
-    background-color: #FF5733; 
-    color: #FFFFFF; 
-}
-
-#child {
-    background-color: #2d8617; 
-    color: #FFFFFF; 
-}
-#school {
-    background-color: #ff0bc2; 
-    color: #FFFFFF; 
-}
-
-#unschool {
-    background-color: #3498DB; 
-    color: #FFFFFF; 
-}
-#univ {
-    background-color: #060afc; 
-    color: #FFFFFF; 
-}
-
-h1 { text-align: center ;
-	font-size: 22px;}
-#back {
-  font-style: italic;
-}
-#zmi{
-      text-align: center ;
-}
-h2 {
-    font-size: 140%;
-}
-p{
-    font-size: 120%;
-}
-#back12{
-    font-weight: 500
-}
-#up {
-    text-transform: uppercase;
-}
-</style>
+    /* Розміщення блоків на mobile */
+    @media (max-width: 767px) {
+        article {
+            width: 100%;
+            display: block;
+        }
+    }
+    </style>
 </head>
 <body>
-   <h1 id="Верх">Автобіографія Тукшинкіна Захара Євгеноовича</h1>
-   <a id="back" href="index.html">Назад на головну</a>
-   <h3 id="zmi">Зміст</h3>
-       <ul>
-           <li><a id="button" href="#Розділ1">Базова інформація</a></li>
-           <li><a id="button" href="#Розділ2">Дитинство</a></li>
-           <li><a id="button" href="#Розділ3">Шкільні роки</a></li>
-           <li><a id="button" href="#Розділ4">Поза школою</a></li>
-           <li><a id="button" href="#Розділ5">Університет</a></li>
-       </ul>   
-   <article>
-       <h2 id="Розділ1">Базова інформація</h2>
-       <p id="base">
-           Мене звати Тукшинкін Захар Євгенович. Я народився 19 вересня 2006 року в місті Донецьк, Київський район, Донецька область.
+    <h1 id="Верх">Автобіографія Тукшинкіна Захара Євгеноовича</h1>
+    <a id="back" href="index.html">Назад на головну</a>
+    <h3 id="zmi">Зміст</h3>
+    <ul>
+        <li><a id="button" href="#Розділ1">Базова інформація</a></li>
+        <li><a id="button" href="#Розділ2">Дитинство</a></li>
+        <li><a id="button" href="#Розділ3">Шкільні роки</a></li>
+        <li><a id="button" href="#Розділ4">Поза школою</a></li>
+        <li><a id="button" href="#Розділ5">Університет</a></li>
+    </ul>
+    <article>
+        <h2 id="Розділ1">Базова інформація</h2>
+        <p id="base">
+            Мене звати Тукшинкін Захар Євгенович. Я народився 19 вересня 2006 року в місті Донецьк, Київський район, Донецька область.
             У мене не має братів та сестер. Також у мене є собака і кіт. Мій зріст 184см, а вага 71кг. На лівій руці я маю шрам . 
             Ліричний відступ: скинули якось два наркомана монашку з даху. І один іншому каже: "Я казав тобі, що то монашка, а ти - бетмен, бетмен". 
             У мене хороше почуття гумору. Я маю дівчину, друзів на жаль не маю але це не великв проблема . У людях я ціную вірність, відкритість, прямоту, чесність та доброту.
              У майбутньому хочу подорожувати різними країнами на різних континентах. Є бажання завести єнота та видру . 
              Сподіваюся, мене не виженуть з універу.
-       </p>
-   </article>
-   <a id="back12" href="#Зміст">до змісту</a>
+        </p>
+    </article>
+    <a id="back12" href="#Зміст">до змісту</a>
    <article>
        <h2 id="Розділ2">Дитинство</h2>
        <p id="child">
