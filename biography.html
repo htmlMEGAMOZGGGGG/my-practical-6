@@ -15,8 +15,22 @@
             display: flex;
             flex-direction: column;
             margin: 0 3px;
+            box-sizing: border-box;
         }
+        @media (max-width: 991px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    .article {
+        width: calc(50% - 20px); /* Змінюємо ширину контейнера з урахуванням відступів */
+        margin-right: 20px; /* Додаємо відступ між контейнерами */
+    }
 
+    .article:nth-child(2n) {
+        margin-right: 0; /* Знімаємо відступ для парних контейнерів, щоб не виходило за межі */
+    }
+
+}
         .row {
             display: flex;
             justify-content: space-between;
