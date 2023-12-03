@@ -5,90 +5,118 @@
     <meta charset="utf-8">
     <title>Біографія</title>
     <style type="text/css">
-         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4; /* Додано фоновий колір для покращення читабельності */
-        }
+               body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            margin: 0 3px;
-        }
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3px; /* Відступ від боків екрану */
+}
 
-        .row {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap; /* Виправлено звернення до рядків на малих екранах */
-            margin-bottom: 20px;
-        }
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
 
-        .article {
-            width: 48%;
-            border: 1px solid black;
-            padding: 20px; /* Збільшено відступи для кращого вигляду */
-            margin-bottom: 20px;
-            box-sizing: border-box; /* Враховано відступи та рамку в розмір блоку */
-        }
+.article {
+    width: 48%;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
 
-        h1 {
-            text-align: center;
-            font-size: 28px; /* Збільшено розмір шрифту для назви */
-        }
+@media (max-width: 991px) {
+    .row {
+        flex-wrap: wrap;
+    }
 
-        h2 {
-            font-size: 18px; /* Збільшено розмір шрифту для підзаголовків */
-        }
+    .article {
+        width: 100%;
+    }
 
-        p {
-            font-size: 16px; /* Збільшено розмір шрифту для тексту */
-            background-color: #e6e6e6;
-            padding: 15px; /* Збільшено відступи для тексту */
-            border: 1px solid black;
-            margin: 15px 0; /* Збільшено відступи відгалуження */
-        }
+    .article:nth-child(1),
+    .article:nth-child(2) {
+        width: 48%;
+    }
+}
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
+h1 {
+    text-align: center;
+    font-size: 22px;
+}
 
-        li {
-            margin: 10px;
-        }
+h2 {
+    font-size: 140%;
+}
 
-        #back {
-            font-style: italic;
-        }
+p {
+    font-size: 120%;
+    background-color: #e6e6e6;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px;
+}
 
-        #zmi {
-            text-align: center;
-        }
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-        #back12 {
-            font-weight: bold; /* Змінено на більш сучасне звернення */
-        }
+li {
+    margin: 10px;
+}
 
-        #up {
-            text-transform: uppercase;
-            display: block;
-            text-align: center; /* Вирівняно по центру на малих екранах */
-            margin-top: 20px; /* Додано відступ для кнопки "Уверх" */
-            text-decoration: none; /* Забрано підкреслення посилання */
-            color: #333; /* Змінено колір посилання для кращої видимості */
-        }
+#back {
+    font-style: italic;
+}
 
-        #up:hover {
-            color: #555; /* Змінено колір при наведенні для кращої видимості */
-        }
+#zmi {
+    text-align: center;
+}
 
-        hr {
-            border: none;
-            border-top: 1px solid black;
-            margin: 20px 0; /* Збільшено відступи лінії */
-        }
+#back12 {
+    font-weight: 500;
+}
+
+#up {
+    text-transform: uppercase;
+}
+
+#base {
+    background-color: #FF5733;
+    color: #FFFFFF;
+}
+
+#child {
+    background-color: #2d8617;
+    color: #FFFFFF;
+}
+
+#school {
+    background-color: #ff0bc2;
+    color: #FFFFFF;
+}
+
+#unschool {
+    background-color: #3498DB;
+    color: #FFFFFF;
+}
+
+#univ {
+    background-color: #060afc;
+    color: #FFFFFF;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid black;
+    margin: 20px;
+}
     </style>
 </head>
 
