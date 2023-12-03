@@ -31,6 +31,7 @@
             margin: 10px;
         }
 
+
         #bio:link,
         #now:link,
         #fri:link,
@@ -64,7 +65,7 @@
         #gall:active {
             color: yellow;
             background-color: transparent;
-            text-decoration: underline;
+            text-decoration: none;
         }
 
         @media (max-width: 768px) {
@@ -72,7 +73,14 @@
                 flex-direction: column;
                 align-items: center;
             }
+            #bio,
+            #now,
+            #fri,
+            #gall {
+                width: 100%;
+                text-align: center;
         }
+      }
     </style>
 </head>
 <body>
