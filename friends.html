@@ -4,6 +4,17 @@
     <meta charset="utf-8">
     <title>friends</title>
     <style type="text/css">
+        h1{
+    text-align: center;
+    font-size: 22px;
+}
+#back{
+    font-style: italic;
+}
+h2{
+    text-align: center;
+} 
+
         .styled-table {
             border-collapse: collapse; 
             width: 100%; 
@@ -14,33 +25,7 @@
             padding: 8px;
             text-align: center; 
         }
-        @media (min-width: 992px){
-    .styled-table th{
-        font-size: 130%;
-    }
-    .styled-table td{
-        font-size: 120%;
-    }
-}
- @media (min-width: 768px) and (max-width: 991px) {
-            /* Tablet: Збільшуємо шрифт заголовків стовпців на 20%, незаголовкових рядків на 10% */
-            .styled-table th {
-                font-size: 120%;
-            }
-
-            .styled-table td {
-                font-size: 110%;
-            }
-        }
-
-        @media (max-width: 767px) {
-            /* Mobile: Збільшуємо шрифт заголовків стовпців на 10% */
-            .styled-table th {
-                font-size: 110%;
-            }
-        }
-
-       
+        
         th {
     background:green;
     color: red;
@@ -54,17 +39,31 @@ table td:last-child {
         .styled-table tr:nth-child(even) {
             background-color: #EDEDED; 
         }
-    
-        h1 {
-            text-align: center ;
-            font-size: 22px;
-        }
-        #back{
-            font-style: italic;
-}
-h2{
-    text-align: center ;
-}
+        @media (min-width: 993px) {
+    th {
+      font-size: 130%;
+    }
+  
+    td {
+      font-size: 120%;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+    th {
+      font-size: 120%;
+    }
+  
+    td {
+      font-size: 110%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    th {
+      font-size: 110%;
+    }
+  }
     </style>
 </head>
 <body>

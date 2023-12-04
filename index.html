@@ -4,89 +4,79 @@
     <meta charset="utf-8">
     <title>Персональна сторінка Тукшинкін Захар Євгенович</title>
     <style type="text/css">
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+       body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+  }
 
-        h1 {
-            text-align: center;
-            font-size: 18px;
-        }
+h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
+}
 
-        p {
-            font-size: 120%;
-        }
+p{
+    font-size: 120%;
+    margin: 2%;
+}
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
+a{
+    font-size: 20px;
+}
 
-        li {
-            margin: 10px;
-        }
+.row {
+    display: grid;
+    justify-items: center;
+  }
 
+a:nth-of-type(1):link{
+    color: red;
+}
+a:nth-of-type(1):visited{
+    color: orange;
+}
+a:nth-of-type(2):link{
+    color: green;
+}
+a:nth-of-type(2):visited{
+    color: black;
+}
+a:nth-of-type(3):link{
+    color: blue;
+}
+a:nth-of-type(3):visited{
+    color: purple;
+}
+a:nth-of-type(4):link{
+    color: brown;
+}
+a:nth-of-type(4):visited{
+    color: pink;
+}
 
-        #bio:link,
-        #now:link,
-        #fri:link,
-        #gall:link {
-            color: green;
-            background-color: transparent;
-            text-decoration: none;
-        }
+@media (min-width: 993px) 
+  {
+    .row {
+        grid-template-columns: repeat(4, 1fr);
+      }
+  }
+  
+  
+  @media (min-width: 769px) and (max-width: 992px)
+  {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20%;
+      }
+  }
 
-        #bio:visited,
-        #now:visited,
-        #fri:visited,
-        #gall:visited {
-            color: pink;
-            background-color: transparent;
-            text-decoration: none;
-        }
-
-        #bio:hover,
-        #now:hover,
-        #fri:hover,
-        #gall:hover {
-            color: red;
-            background-color: transparent;
-            text-decoration: underline;
-        }
-
-        #bio:active,
-        #now:active,
-        #fri:active,
-        #gall:active {
-            color: yellow;
-            background-color: transparent;
-            text-decoration: none;
-        }
-
-        @media (min-width: 768px) and (max-width: 991px) {
-            ul {
-                flex-wrap: nowrap;
-            }
-          }
-          
-        @media (max-width: 768px) {
-            ul {
-                flex-direction: column;
-                align-items: center;
-            }
-          }
-            #bio,
-            #now,
-            #fri,
-            #gall {
-                width: 100%;
-                text-align: center;
-        }
+  @media (max-width: 768px)
+  {
+    .row {
+        row-gap: 20%;
+      }
+  }
     </style>
 </head>
 <body>
